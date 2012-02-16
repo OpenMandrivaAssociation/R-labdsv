@@ -2,15 +2,17 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.3_1
+Version:          1.4_1
 Release:          1
 Summary:          Ordination and Multivariate Analysis for Ecology
 Group:            Sciences/Mathematics
-License:          GPL version 2 or newer
+License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/Archive/%{packname}/%{packname}_1.3-1.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.4-1.tar.gz
 Requires:         R-mgcv R-MASS 
+Requires:         R-rgl 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-mgcv R-MASS
+BuildRequires:    R-rgl 
 %rename R-cran-labdsv
 
 %description
@@ -35,8 +37,8 @@ rm -f %{buildroot}%{rlibdir}/R.css
 
 %files
 %dir %{rlibdir}/%{packname}
-%doc %{rlibdir}/%{packname}/html
 %doc %{rlibdir}/%{packname}/ChangeLog
+%doc %{rlibdir}/%{packname}/html
 %doc %{rlibdir}/%{packname}/DESCRIPTION
 %{rlibdir}/%{packname}/INDEX
 %{rlibdir}/%{packname}/NAMESPACE
