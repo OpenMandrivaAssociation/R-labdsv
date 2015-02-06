@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          1.6.1
-Release:          1
+Release:          2
 Summary:          Ordination and Multivariate Analysis for Ecology
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
