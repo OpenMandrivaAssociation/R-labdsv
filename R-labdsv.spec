@@ -7,7 +7,7 @@ Release:          2
 Summary:          Ordination and Multivariate Analysis for Ecology
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/labdsv_1.6-1.tar.gz
 Requires:         R-mgcv
 Requires:         R-MASS 
